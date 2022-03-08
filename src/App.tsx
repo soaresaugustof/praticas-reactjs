@@ -1,17 +1,13 @@
-import styled from 'styled-components'
-
-const Title = styled.h1`
-  font-size: 64px;
-  color: #8257e6;
-`
+import { GlobalStyle } from "./styles/global";
+import { Header } from "./components/Header";
+import { Dashboard } from "./components/Dashboard";
 
 export function App() {
   return (
-    <div className="App">
-      <Title className="title">Hello World</Title>
-      <button>
-        Salvar
-      </button>
-    </div>
+    <>
+      <Header />
+      <Dashboard />
+      <GlobalStyle />
+    </>
   );
 }
